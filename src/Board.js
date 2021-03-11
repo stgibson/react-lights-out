@@ -91,6 +91,7 @@ function Board({ nrows=3, ncols=3, chanceLightStartsOn=0.5 }) {
                   flipCellsAroundMe={ () => flipCellsAround(`${y}-${x}`) }
                   isLit={ cell }
                   key={ y * ncols + x }
+                  id={ `${y}-${x}`}
                 />
               )) 
             }</tr>
